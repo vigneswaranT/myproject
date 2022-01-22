@@ -1,0 +1,24 @@
+<div class="balance">
+    <td class="num1">
+        <label>Enter your Acc no or UPI NO</label>
+        <input type="text" #n1>
+    </td><br>
+    <td>
+        <input type="button" style="padding-left: 20px;" class="btn btn-primary" onclick="ch( n1.value)" >
+     <span>{{spa}}</span>
+    </td>
+    <label>Enter your amount</label>
+    <td class="pass1">
+        <input type="number">
+    </td><br>
+    
+    <td>
+        <input type="submit" style="padding-left: 20px;" class="btn btn-success" >
+
+    </td>
+</div>
+<div>
+    <input type="button" value="pay" routerLink="balance1" value="balance"  (click) = "butt()"
+        style="padding-left: 20px;" class="btn btn-primary">
+</div>
+<router-outlet></router-outlet>
